@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>grid layout</title>
+    <title>Grid Layout</title>
     <style>
         .container {
             display: grid;
@@ -12,25 +12,29 @@
             gap: 10px;
             height: 100vh;
             width: 100vw;
-            padding: 10px;
-            box-sizing: border-box;
         }
-        .item1 { grid-column: 1 / 3; grid-row: 1 / 2; background-color: green; }
-        .item2 { grid-column: 3 / 4; grid-row: 1 / 2; background-color: orange; }
-        .item3 { grid-column: 4 / 5; grid-row: 1 / 2; background-color: purple; }
-        .item4 { grid-column: 1 / 2; grid-row: 2 / 3; background-color: pink; }
-        .item5 { grid-column: 1 / 2; grid-row: 3 / 4; background-color: blue; }
-        .item6 { grid-column: 2 / 5; grid-row: 2 / 4; background-color: lightgreen; }
+        .green { background-color: green; }
+        .yellow { background-color: yellow; }
+        .red { background-color: red; }
+
+        .item1 { grid-column: 1 / 3; grid-row: 1 / 3; }
+        .item2 { grid-column: 3 / 5; grid-row: 1 / 2; }
+        .item3 { grid-column: 4 / 5; grid-row: 2 / 3; }
+        .item4 { grid-column: 3 / 4; grid-row: 2 / 3; }
+        .item5 { grid-column: 1 / 2; grid-row: 3 / 4; }
+        .item6 { grid-column: 2 / 3; grid-row: 3 / 4; }
+        .item7 { grid-column: 3 / 5; grid-row: 3 / 4; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item1"></div>
-        <div class="item2"></div>
-        <div class="item3"></div>
-        <div class="item4"></div>
-        <div class="item5"></div>
-        <div class="item6"></div>
+        <div class="item1 green"></div>
+        <div class="item2 green"></div>
+        <div class="item3 red"></div>
+        <div class="item4 yellow"></div>
+        <div class="item5 red"></div>
+        <div class="item6 yellow"></div>
+        <div class="item7 green"></div>
     </div>
 </body>
 </html>
